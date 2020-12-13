@@ -7,3 +7,6 @@ def index (request):
 
 def expanding_cards(request):
     return render(request,"projects/expanding_cards.html")
+
+def progress_steps(request):
+    return render(request,"projects/progress_steps.html")

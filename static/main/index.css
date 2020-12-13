@@ -4,3 +4,11 @@
   margin-left: 30px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.link{
+  text-decoration: none;
+}
+
+/* .link:visited{
+  color:blue;
+} */
