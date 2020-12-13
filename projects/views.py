@@ -5,5 +5,5 @@ from django.shortcuts import render
 def index (request):
     return render(request,"index.html")
 
-# def blog_cards(request):
-#     return render(request,"practiceapp/blog_cards.html")
+def expanding_cards(request):
+    return render(request,"projects/expanding_cards.html")
