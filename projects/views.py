@@ -10,3 +10,6 @@ def expanding_cards(request):
 
 def progress_steps(request):
     return render(request,"projects/progress_steps.html")
+
+def rotating_nav_animation(request):
+    return render(request,"projects/rotating_nav_animation.html")
