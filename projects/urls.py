@@ -9,4 +9,5 @@ urlpatterns = [
     path('expanding_cards/', views.expanding_cards, name='expanding_cards'),
     path('progress_steps/', views.progress_steps, name='progress_steps'),
     path('rotating_nav_animation/', views.rotating_nav_animation, name='rotating_nav_animation'),
+    path('hidden_search/', views.hidden_search, name='hidden_search'),
 ]

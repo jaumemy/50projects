@@ -13,3 +13,6 @@ def progress_steps(request):
 
 def rotating_nav_animation(request):
     return render(request,"projects/rotating_nav_animation.html")
+
+def hidden_search(request):
+    return render(request,"projects/hidden_search.html")
