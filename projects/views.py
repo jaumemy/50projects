@@ -16,3 +16,6 @@ def rotating_nav_animation(request):
 
 def hidden_search(request):
     return render(request,"projects/hidden_search.html")
+
+def blurry_loading(request):
+    return render(request,"projects/blurry_loading.html")

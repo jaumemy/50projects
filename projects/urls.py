@@ -10,4 +10,5 @@ urlpatterns = [
     path('progress_steps/', views.progress_steps, name='progress_steps'),
     path('rotating_nav_animation/', views.rotating_nav_animation, name='rotating_nav_animation'),
     path('hidden_search/', views.hidden_search, name='hidden_search'),
+    path('blurry_loading/', views.blurry_loading, name='blurry_loading'),
 ]
