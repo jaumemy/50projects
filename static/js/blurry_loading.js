@@ -12,6 +12,7 @@ function blurring(){
   if (load>99){
     clearInterval(int)
     back.style.display="inline";
+    back.style.opacity= 0.85;
   }
 
   loadText.innerText = `${load}%`

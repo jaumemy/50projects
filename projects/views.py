@@ -19,3 +19,6 @@ def hidden_search(request):
 
 def blurry_loading(request):
     return render(request,"projects/blurry_loading.html")
+
+def scroll_animation(request):
+    return render(request,"projects/scroll_animation.html")
