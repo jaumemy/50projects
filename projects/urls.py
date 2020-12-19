@@ -12,4 +12,5 @@ urlpatterns = [
     path('hidden_search/', views.hidden_search, name='hidden_search'),
     path('blurry_loading/', views.blurry_loading, name='blurry_loading'),
     path('scroll_animation/', views.scroll_animation, name='scroll_animation'),
+    path('split_landing_page/', views.split_landing_page, name='split_landing_page'),
 ]

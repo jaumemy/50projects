@@ -22,3 +22,6 @@ def blurry_loading(request):
 
 def scroll_animation(request):
     return render(request,"projects/scroll_animation.html")
+
+def split_landing_page(request):
+    return render(request,"projects/split_landing_page.html")
