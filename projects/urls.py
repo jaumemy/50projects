@@ -13,4 +13,5 @@ urlpatterns = [
     path('blurry_loading/', views.blurry_loading, name='blurry_loading'),
     path('scroll_animation/', views.scroll_animation, name='scroll_animation'),
     path('split_landing_page/', views.split_landing_page, name='split_landing_page'),
+    path('form_input_wave/', views.form_input_wave, name='form_input_wave'),
 ]

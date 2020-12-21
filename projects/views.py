@@ -25,3 +25,6 @@ def scroll_animation(request):
 
 def split_landing_page(request):
     return render(request,"projects/split_landing_page.html")
+
+def form_input_wave(request):
+    return render(request,"projects/form_input_wave.html")

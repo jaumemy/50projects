@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Form Wave Animation</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/form_input_wave.css' %}">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Please Login</h1>
+      <form>
+
+        <div class="form-control">
+          <input type="text" required>
+          <label>Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+
+        <button class="btn">Login</button>
+
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+        <p class="text">Want to go back? <a href="{% url 'projects:index' %}">Back</a></p>
+
+      </form>
+    </div>
+
+    <script src="{% static 'js/form_input_wave.js' %}"></script>
+  </body>
+</html>
