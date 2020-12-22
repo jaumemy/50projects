@@ -28,3 +28,6 @@ def split_landing_page(request):
 
 def form_input_wave(request):
     return render(request,"projects/form_input_wave.html")
+
+def sound_board(request):
+    return render(request,"projects/sound_board.html")

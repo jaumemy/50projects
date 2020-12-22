@@ -14,4 +14,5 @@ urlpatterns = [
     path('scroll_animation/', views.scroll_animation, name='scroll_animation'),
     path('split_landing_page/', views.split_landing_page, name='split_landing_page'),
     path('form_input_wave/', views.form_input_wave, name='form_input_wave'),
+    path('sound_board/', views.sound_board, name='sound_board'),
 ]

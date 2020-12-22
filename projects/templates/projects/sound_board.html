@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sound Board</title>
+    <script src="https://kit.fontawesome.com/b7da79d2ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/sound_board.css' %}">
+  </head>
+  <body>
+
+    <h1>WARNING! Use headphones or lower volume!</h1>
+
+    <div class="container">
+      <audio id="applause" src="{% static 'sounds/applause.mp3' %}"></audio>
+      <audio id="boo" src="{% static 'sounds/boo.mp3' %}"></audio>
+      <audio id="dial" src="{% static 'sounds/dial.mp3' %}"></audio>
+      <audio id="gasp" src="{% static 'sounds/gasp.mp3' %}"></audio>
+      <audio id="kid" src="{% static 'sounds/kid.mp3' %}"></audio>
+      <audio id="laugh" src="{% static 'sounds/laugh.mp3' %}"></audio>
+      <audio id="moo" src="{% static 'sounds/moo.mp3' %}"></audio>
+      <audio id="pewpew" src="{% static 'sounds/pewpew.mp3' %}"></audio>
+      <audio id="shush" src="{% static 'sounds/shush.mp3' %}"></audio>
+      <audio id="tada" src="{% static 'sounds/tada.mp3' %}"></audio>
+      <audio id="victory" src="{% static 'sounds/victory.mp3' %}"></audio>
+      <audio id="wrong" src="{% static 'sounds/wrong.mp3' %}"></audio>
+
+      <div id=buttons></div>
+    </div>
+
+    <p class="text">Too cool for you? Go <a id="back" href="{% url 'projects:index' %}">Back</a></p>
+
+    <script src="{% static 'js/sound_board.js' %}"></script>
+  </body>
+</html>
