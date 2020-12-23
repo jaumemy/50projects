@@ -31,3 +31,6 @@ def form_input_wave(request):
 
 def sound_board(request):
     return render(request,"projects/sound_board.html")
+
+def dad_jokes(request):
+    return render(request,"projects/dad_jokes.html")

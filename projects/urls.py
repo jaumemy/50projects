@@ -15,4 +15,5 @@ urlpatterns = [
     path('split_landing_page/', views.split_landing_page, name='split_landing_page'),
     path('form_input_wave/', views.form_input_wave, name='form_input_wave'),
     path('sound_board/', views.sound_board, name='sound_board'),
+    path('dad_jokes/', views.dad_jokes, name='dad_jokes'),
 ]
