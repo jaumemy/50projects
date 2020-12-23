@@ -34,3 +34,6 @@ def sound_board(request):
 
 def dad_jokes(request):
     return render(request,"projects/dad_jokes.html")
+
+def event_keycodes(request):
+    return render(request,"projects/event_keycodes.html")

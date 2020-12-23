@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Event Keycodes</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/event_keycodes.css' %}">
+  </head>
+  <body>
+
+    <div id="insert">
+      <div class="key">
+        Press any key to get the keyCode
+      </div>
+    </div>
+
+    <p class="pup">Have fun, but just remember keyCode is <a href="https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice#35395154">Deprecated</a> ;) </p>
+
+    <p>Take me <a href="{% url 'projects:index' %}">Back</a> </p>
+
+    <script src="{% static 'js/event_keycodes.js' %}"></script>
+  </body>
+</html>
