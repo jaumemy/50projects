@@ -78,6 +78,6 @@ body{
 }
 
 .panel.active a:visited{
-  color: #fff;
-  opacity: 0.5;
+  color: black;
+  opacity: 1;
 }
