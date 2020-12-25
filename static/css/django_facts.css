@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+  color: #0C3C26;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  z-index: 1;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #0C3C26;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: #0C3C26;
+  opacity: 0.8;
+  border: 1px solid #0C3C26;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.faq.active {
+  background-color: #edfcf7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .faq.active::before,
+.faq.active::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  content: "\f135";
+  color: #0C3C26;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+} */
+
+.rocketone {
+  display: none;
+}
+
+.faq.active .rocketone {
+  display: block;
+  color: #0C4B33;
+  opacity: 0.2;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  z-index: -1;
+  transform: rotateZ(-45deg);
+}
+
+.rockettwo {
+  display: none;
+}
+
+.faq.active .rockettwo {
+  display: block;
+  color: #41b085;
+  opacity: 0.4;
+  position: absolute;
+  top: 77px;
+  left: 300px;
+  z-index: -1;
+  transform: rotateZ(-0deg);
+}
+
+.rocketback {
+  color: #0C4B33;
+  opacity: 0.7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.rocketback .fa-rocket {
+  transform: rotateZ(-135deg);
+}
+
+.rocketback a{
+  transform: translate(10px, -4px);
+}
+
+/* .faq.active::before {
+  color: #44B78B;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(-180deg);
+} */
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq.active .faq-title {
+  color: black;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+  color: black;
+}
+
+.faq-toggle {
+  background-color: #20AA76;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #20AA76;
+  color: #fff;
+  opacity: 0.7;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django Facts</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/django_facts.css' %}">
+  </head>
+  <body>
+
+    <h1>Django Facts</h1>
+
+    <div class="faq-container">
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What is Django
+        </h3>
+        <p class="faq-text">
+          Django is a Python-based free and open-source web framework that
+          follows the model-template-views. <br>
+          Django's primary goal is to ease the creation of complex, database-driven websites
+          with as little code as posible. <br>
+          As they say: "Django,the web framework for perfectionists with deadlines".
+        </p>
+        <div class="rocketone">
+          <i class="fas fa-rocket" data-fa-transform="grow-80"></i>
+        </div>
+        <div class="rockettwo">
+          <i class="fas fa-rocket" data-fa-transform="grow-150"></i>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Who created it and when
+        </h3>
+        <p class="faq-text">
+          First release was in 21 July 2005, by Adrian Holovaty and Simon Wilson,
+          both journalists with web programming skills working at the Lawrence Journal-World,
+          in Kansas, United States.
+        </p>
+        <div class="rocketone">
+          <i class="fas fa-rocket" data-fa-transform="grow-80"></i>
+        </div>
+        <div class="rockettwo">
+          <i class="fas fa-rocket" data-fa-transform="grow-150"></i>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Who uses Django
+        </h3>
+        <p class="faq-text">
+          Some sites that use Django are The Washington Post, Instagram, Spotify,
+          Youtube, Dropbox, Prezi or the NASA official website.
+        </p>
+        <div class="rocketone">
+          <i class="fas fa-rocket" data-fa-transform="grow-80"></i>
+        </div>
+        <div class="rockettwo">
+          <i class="fas fa-rocket" data-fa-transform="grow-150"></i>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Community
+        </h3>
+        <p class="faq-text">
+          There is a semiannual conference for Django developers and users, named "DjangoCon",
+          that has been held since September 2008, usually in Europe, but also in the United States. <br>
+          Django has spawned user groups and meetups around the world,
+          the most notable group is the Django Girls organization, which began in Poland but now has had events in 91 countries.
+        </p>
+        <div class="rocketone">
+          <i class="fas fa-rocket" data-fa-transform="grow-80"></i>
+        </div>
+        <div class="rockettwo">
+          <i class="fas fa-rocket" data-fa-transform="grow-150"></i>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Tell me more
+        </h3>
+        <p class="faq-text">
+          Django is named after the jazz guitarist and composer
+          <a href="https://en.wikipedia.org/wiki/Django_Reinhardt">Django Reindhart</a>. <br>
+          You can find more info in the <a href="https://www.djangoproject.com/">Official Django Website</a>
+          or the <a href="https://en.wikipedia.org/wiki/Django_(web_framework)"> Wikipedia Page</a>.
+        </p>
+        <div class="rocketone">
+          <i class="fas fa-rocket" data-fa-transform="grow-80"></i>
+        </div>
+        <div class="rockettwo">
+          <i class="fas fa-rocket" data-fa-transform="grow-150"></i>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="rocketback">
+        <i class="fas fa-rocket" data-fa-transform="grow-20"></i>
+        <a href="{% url 'projects:index' %}">Back</a>
+      </div>
+
+    </div>
+
+    <script src="{% static 'js/django_facts.js' %}"></script>
+  </body>
+</html>

@@ -17,5 +17,5 @@ urlpatterns = [
     path('sound_board/', views.sound_board, name='sound_board'),
     path('dad_jokes/', views.dad_jokes, name='dad_jokes'),
     path('event_keycodes/', views.event_keycodes, name='event_keycodes'),
-
+    path('django_facts/', views.django_facts, name='django_facts'),
 ]

@@ -37,3 +37,6 @@ def dad_jokes(request):
 
 def event_keycodes(request):
     return render(request,"projects/event_keycodes.html")
+
+def django_facts(request):
+    return render(request,"projects/django_facts.html")
