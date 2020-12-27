@@ -19,4 +19,5 @@ urlpatterns = [
     path('event_keycodes/', views.event_keycodes, name='event_keycodes'),
     path('django_facts/', views.django_facts, name='django_facts'),
     path('random_choice/', views.random_choice, name='random_choice'),
+    path('animated_navigation/', views.animated_navigation, name='animated_navigation'),
 ]

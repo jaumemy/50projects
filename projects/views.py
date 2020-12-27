@@ -43,3 +43,6 @@ def django_facts(request):
 
 def random_choice(request):
     return render(request,"projects/random_choice.html")
+
+def animated_navigation(request):
+    return render(request,"projects/animated_navigation.html")
