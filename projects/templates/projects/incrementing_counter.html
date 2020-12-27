@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Incrementing Counter</title>
+
+    <link rel="stylesheet" href="{% static 'css/incrementing_counter.css' %}">
+  </head>
+  <body>
+
+    <div class="counter-container c1">
+      <i class="fab fa-twitter fa-3x"></i>
+      <div class="counter" data-target="84000"></div>
+      <span>Twitter Followers</span>
+    </div>
+
+    <div class="counter-container c2">
+      <i class="fab fa-youtube fa-3x"></i>
+      <div class="counter" data-target="115000"></div>
+      <span>Youtube Subscribers</span>
+      </div>
+    </div>
+
+    <div class="counter-container c3">
+      <i class="fab fa-twitch fa-3x"></i>
+      <div class="counter" data-target="60000"></div>
+      <span>Twitch Subscribers</span>
+    </div>
+
+    <div class="buttons">
+      <a href="#" id="update">Update All</a>
+      <a href="{% url 'projects:index' %}">Back</a>
+    </div>
+
+    <script src="{% static 'js/incrementing_counter.js' %}"></script>
+  </body>
+</html>

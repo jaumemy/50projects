@@ -46,3 +46,6 @@ def random_choice(request):
 
 def animated_navigation(request):
     return render(request,"projects/animated_navigation.html")
+
+def incrementing_counter(request):
+    return render(request,"projects/incrementing_counter.html")
