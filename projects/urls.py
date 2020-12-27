@@ -18,4 +18,5 @@ urlpatterns = [
     path('dad_jokes/', views.dad_jokes, name='dad_jokes'),
     path('event_keycodes/', views.event_keycodes, name='event_keycodes'),
     path('django_facts/', views.django_facts, name='django_facts'),
+    path('random_choice/', views.random_choice, name='random_choice'),
 ]

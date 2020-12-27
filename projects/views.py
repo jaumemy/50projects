@@ -40,3 +40,6 @@ def event_keycodes(request):
 
 def django_facts(request):
     return render(request,"projects/django_facts.html")
+
+def random_choice(request):
+    return render(request,"projects/random_choice.html")
