@@ -49,3 +49,6 @@ def animated_navigation(request):
 
 def incrementing_counter(request):
     return render(request,"projects/incrementing_counter.html")
+
+def movie_app(request):
+    return render(request,"projects/movie_app.html")

@@ -21,4 +21,5 @@ urlpatterns = [
     path('random_choice/', views.random_choice, name='random_choice'),
     path('animated_navigation/', views.animated_navigation, name='animated_navigation'),
     path('incrementing_counter/', views.incrementing_counter, name='incrementing_counter'),
+    path('movie_app/', views.movie_app, name='movie_app'),
 ]
