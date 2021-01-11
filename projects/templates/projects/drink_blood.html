@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Drink Blood</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/drink_blood.css' %}">
+  </head>
+  <body>
+
+    <h1>You are a Vampire, Drink Blood</h1>
+    <h3>Goal: 2 Liters</h3>
+
+    <div class="cup">
+      <div class="remained" id="remained">
+        <span id="liters"></span>
+        <small>Remainded</small>
+      </div>
+      <div class="percentatge" id="percentatge">
+        20%
+      </div>
+    </div>
+
+    <p class="text">Fill the pills with blood! Or repent... and go <a href="{% url 'projects:index' %}">Back</a> </p>
+
+    <div class="cups">
+      <div class="cup cup-small full">250 ml</div>
+      <div class="cup cup-small full">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+    </div>
+
+    <script src="{% static 'js/drink_blood.js' %}"></script>
+  </body>
+</html>

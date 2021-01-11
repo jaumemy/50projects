@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  background-image: url("https://images.unsplash.com/photo-1609869504519-7216031091ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #000000;
+  color: #fff5f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff5f6;
+}
+
+.cup {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 4px solid #570202;
+  border-radius: 75px;
+  color: #570202;
+  height: 280px;
+  width: 150px;
+  margin: 20px 0;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  height: 95px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: #730202;
+  color: #fff5f6;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentatge {
+  background-color: #730202;
+  color: #fff5f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 80px;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 11px;
+    font-weight: bold;
+  }
+}

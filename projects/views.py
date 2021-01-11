@@ -52,3 +52,6 @@ def incrementing_counter(request):
 
 def movie_app(request):
     return render(request,"projects/movie_app.html")
+
+def drink_blood(request):
+    return render(request,"projects/drink_blood.html")
