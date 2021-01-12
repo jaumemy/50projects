@@ -5,10 +5,47 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.link{
-  text-decoration: none;
+h2 {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin: 65px;
+  color: #503AA6;
 }
 
-/* .link:visited{
-  color:blue;
-} */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  background-image: linear-gradient(45deg, #503AA6, #9E69ED);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+a {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  width: 315px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
