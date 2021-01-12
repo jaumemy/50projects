@@ -50,8 +50,11 @@ def animated_navigation(request):
 def incrementing_counter(request):
     return render(request,"projects/incrementing_counter.html")
 
+def drink_blood(request):
+    return render(request,"projects/drink_blood.html")
+
 def movie_app(request):
     return render(request,"projects/movie_app.html")
 
-def drink_blood(request):
-    return render(request,"projects/drink_blood.html")
+def background_slider(request):
+    return render(request,"projects/background_slider.html")
