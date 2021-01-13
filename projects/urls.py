@@ -24,4 +24,5 @@ urlpatterns = [
     path('drink_blood/', views.drink_blood, name='drink_blood'),
     path('movie_app/', views.movie_app, name='movie_app'),
     path('background_slider/', views.background_slider, name='background_slider'),
+    path('theme_clock/', views.theme_clock, name='theme_clock'),
 ]

@@ -58,3 +58,6 @@ def movie_app(request):
 
 def background_slider(request):
     return render(request,"projects/background_slider.html")
+
+def theme_clock(request):
+    return render(request,"projects/theme_clock.html")
