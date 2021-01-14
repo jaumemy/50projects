@@ -25,4 +25,5 @@ urlpatterns = [
     path('movie_app/', views.movie_app, name='movie_app'),
     path('background_slider/', views.background_slider, name='background_slider'),
     path('theme_clock/', views.theme_clock, name='theme_clock'),
+    path('ripple_effect/', views.ripple_effect, name='ripple_effect'),
 ]

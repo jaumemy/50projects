@@ -61,3 +61,6 @@ def background_slider(request):
 
 def theme_clock(request):
     return render(request,"projects/theme_clock.html")
+
+def ripple_effect(request):
+    return render(request,"projects/ripple_effect.html")
