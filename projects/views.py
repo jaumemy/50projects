@@ -64,3 +64,6 @@ def theme_clock(request):
 
 def ripple_effect(request):
     return render(request,"projects/ripple_effect.html")
+
+def minecraft_drag(request):
+    return render(request,"projects/minecraft_drag.html")

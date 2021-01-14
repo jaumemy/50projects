@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url('https://cdn.mos.cms.futurecdn.net/ZDBZzGUZX4Ki7ArgZnhGyg.jpg');
+  /* https://image-cdn.essentiallysports.com/wp-content/uploads/20200914195042/minecraft-dungeons-feat-d82d4-1.jpg */
+  background-position: center center;
+  background-size: cover;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fill {
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2c25557-2a1a-4c09-8a10-9e993c118726/d3kdv3l-825e4c56-4798-44fd-9ba4-3a70e0d417ec.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDJjMjU1NTctMmExYS00YzA5LThhMTAtOWU5OTNjMTE4NzI2XC9kM2tkdjNsLTgyNWU0YzU2LTQ3OTgtNDRmZC05YmE0LTNhNzBlMGQ0MTdlYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.cZ4daAaRBeT2yCYxQjXbCj9NZrXHyufXgIYIC9BfC8U');
+  background-position: center center;
+  background-size: cover;
+}
+
+.hold {
+  border: solid 3px rgba(50, 50, 250, 0.7);
+}
+
+.hovered {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2c25557-2a1a-4c09-8a10-9e993c118726/d3kdv3l-825e4c56-4798-44fd-9ba4-3a70e0d417ec.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDJjMjU1NTctMmExYS00YzA5LThhMTAtOWU5OTNjMTE4NzI2XC9kM2tkdjNsLTgyNWU0YzU2LTQ3OTgtNDRmZC05YmE0LTNhNzBlMGQ0MTdlYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.cZ4daAaRBeT2yCYxQjXbCj9NZrXHyufXgIYIC9BfC8U');
+  background-position: center center;
+  background-size: cover;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-style: dashed;
+}
+
+.hovered::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+}
+
+small {
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  letter-spacing: 1px;
+}
+
+small.back {
+  left: 30px;
+  right: auto;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Minecraft Drag</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/minecraftia" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/minecraft_drag.css' %}">
+  </head>
+  <body>
+
+    <h1>DRAG THE BLUE CREEPER!</h1>
+
+    <div class="empty">
+      <div class="fill" draggable="true"></div>
+    </div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+
+    <div class="footer">
+      <small class="back"> <a href="{% url 'projects:index' %}">BACK</a> </small>
+      <small> <i class="far fa-copyright"></i> 2021 Careminecraft, by jaumemy</small>
+    </div>
+
+
+    <script src="{% static 'js/minecraft_drag.js' %}"></script>
+  </body>
+</html>
