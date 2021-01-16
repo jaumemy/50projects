@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Drawing App</title>
+    <link rel="icon" href="https://img.icons8.com/nolan/64/html-5.png">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/drawing_app.css' %}">
+  </head>
+  <body>
+
+    <div class="all">
+
+      <p>DRAW & ENJOY!</p>
+
+      <canvas id="canvas" width="1000" height="450"></canvas>
+
+      <div class="toolbox">
+        <button id="decrease">-</button>
+        <span id="size">5</span>
+        <button id="increase">+</button>
+        <input type="color" id="color">
+        <button id="brush"> <i class="fas fa-brush"></i> </button>
+        <button id="erase"> <i class="fas fa-eraser"></i> </button>
+        <button id="paint"> PAINT ALL </button>
+        <button id="clear">CLEAR ALL</button>
+        <button> <a href="{% url 'projects:index' %}">BACK</a> </button>
+      </div>
+
+    </div>
+
+    <script src="{% static 'js/drawing_app.js' %}"></script>
+  </body>
+</html>

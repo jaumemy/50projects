@@ -67,3 +67,6 @@ def ripple_effect(request):
 
 def minecraft_drag(request):
     return render(request,"projects/minecraft_drag.html")
+
+def drawing_app(request):
+    return render(request,"projects/drawing_app.html")

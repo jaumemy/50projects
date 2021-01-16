@@ -27,4 +27,5 @@ urlpatterns = [
     path('theme_clock/', views.theme_clock, name='theme_clock'),
     path('ripple_effect/', views.ripple_effect, name='ripple_effect'),
     path('minecraft_drag/', views.minecraft_drag, name='minecraft_drag'),
+    path('drawing_app/', views.drawing_app, name='drawing_app'),
 ]
