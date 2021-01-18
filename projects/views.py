@@ -70,3 +70,6 @@ def minecraft_drag(request):
 
 def drawing_app(request):
     return render(request,"projects/drawing_app.html")
+
+def kinetic_loader(request):
+    return render(request,"projects/kinetic_loader.html")

@@ -28,4 +28,5 @@ urlpatterns = [
     path('ripple_effect/', views.ripple_effect, name='ripple_effect'),
     path('minecraft_drag/', views.minecraft_drag, name='minecraft_drag'),
     path('drawing_app/', views.drawing_app, name='drawing_app'),
+    path('kinetic_loader/', views.kinetic_loader, name='kinetic_loader'),
 ]
