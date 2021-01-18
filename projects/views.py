@@ -76,3 +76,6 @@ def kinetic_loader(request):
 
 def content_placeholder(request):
     return render(request,"projects/content_placeholder.html")
+
+def sticky_navbar(request):
+    return render(request,"projects/sticky_navbar.html")

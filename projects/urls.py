@@ -30,4 +30,5 @@ urlpatterns = [
     path('drawing_app/', views.drawing_app, name='drawing_app'),
     path('kinetic_loader/', views.kinetic_loader, name='kinetic_loader'),
     path('content_placeholder/', views.content_placeholder, name='content_placeholder'),
+    path('sticky_navbar/', views.sticky_navbar, name='sticky_navbar'),
 ]
