@@ -73,3 +73,6 @@ def drawing_app(request):
 
 def kinetic_loader(request):
     return render(request,"projects/kinetic_loader.html")
+
+def content_placeholder(request):
+    return render(request,"projects/content_placeholder.html")

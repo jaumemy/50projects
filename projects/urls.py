@@ -29,4 +29,5 @@ urlpatterns = [
     path('minecraft_drag/', views.minecraft_drag, name='minecraft_drag'),
     path('drawing_app/', views.drawing_app, name='drawing_app'),
     path('kinetic_loader/', views.kinetic_loader, name='kinetic_loader'),
+    path('content_placeholder/', views.content_placeholder, name='content_placeholder'),
 ]
