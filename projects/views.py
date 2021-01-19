@@ -85,3 +85,6 @@ def double_vertical_slider(request):
 
 def positive_notification(request):
     return render(request,"projects/positive_notification.html")
+
+def github_profiles(request):
+    return render(request,"projects/github_profiles.html")

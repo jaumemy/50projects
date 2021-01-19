@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Github Profiles</title>
+    <link rel="icon" href="https://img.icons8.com/nolan/64/html-5.png">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/github_profiles.css' %}">
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="#"> <i class="fab fa-github"></i> </a></h1>
+        <ul>
+          <li><a href="#">Pull Requests</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Explore</a></li>
+          <li> <a href="{% url 'projects:index' %}">Back</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+    <form class="user-form" id="form">
+      <input type="text" id="search" placeholder="Search a Github User">
+    </form>
+
+    <main id="main"></main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+    <script src="{% static 'js/github_profiles.js' %}"></script>
+  </body>
+</html>
