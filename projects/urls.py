@@ -32,4 +32,5 @@ urlpatterns = [
     path('content_placeholder/', views.content_placeholder, name='content_placeholder'),
     path('sticky_navbar/', views.sticky_navbar, name='sticky_navbar'),
     path('double_vertical_slider/', views.double_vertical_slider, name='double_vertical_slider'),
+    path('positive_notification/', views.positive_notification, name='positive_notification'),
 ]

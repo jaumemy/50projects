@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(60deg, #faf74b, #fcffd6);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  background-image: linear-gradient(60deg, #eb3bc2, #fa87df);
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.10rem;
+  padding: 1.10rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.back {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-image: linear-gradient(60deg, #de8cdb, #da95fc);
+  font-size: 0.90rem;
+  padding: 0.90rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.toast.happyblue {
+  color: #fff;
+  background-image: linear-gradient(60deg, #511ff2, #9e83f7);
+}
+
+.toast.happygreen {
+  color: #fff;
+  background-image: linear-gradient(60deg, #07eb38, #78ff95);
+}
+
+.toast.happyred {
+  color: #fff;
+  background-image: linear-gradient(60deg, #fc0d58, #ff8aaf);
+}

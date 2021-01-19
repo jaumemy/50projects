@@ -82,3 +82,6 @@ def sticky_navbar(request):
 
 def double_vertical_slider(request):
     return render(request,"projects/double_vertical_slider.html")
+
+def positive_notification(request):
+    return render(request,"projects/positive_notification.html")
