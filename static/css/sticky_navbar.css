@@ -146,6 +146,10 @@ body {
   padding: 7px 15px;
 }
 
+.footer p {
+  color: #fff;
+}
+
 .footer a.current,
 .footer a:hover {
   color: #503AA6;

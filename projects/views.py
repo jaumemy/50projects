@@ -79,3 +79,6 @@ def content_placeholder(request):
 
 def sticky_navbar(request):
     return render(request,"projects/sticky_navbar.html")
+
+def double_vertical_slider(request):
+    return render(request,"projects/double_vertical_slider.html")

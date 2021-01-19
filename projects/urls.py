@@ -31,4 +31,5 @@ urlpatterns = [
     path('kinetic_loader/', views.kinetic_loader, name='kinetic_loader'),
     path('content_placeholder/', views.content_placeholder, name='content_placeholder'),
     path('sticky_navbar/', views.sticky_navbar, name='sticky_navbar'),
+    path('double_vertical_slider/', views.double_vertical_slider, name='double_vertical_slider'),
 ]
