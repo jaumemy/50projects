@@ -10,6 +10,8 @@ body {
   background-color: #fff;
   background-image: url('https://cdn-images-1.medium.com/max/1200/1*qwFrTMnFkcd3U9rFKwwacw.png');
   background-size: 20%;
+  font-size: 14px;
+  font-weight: bold;
   background-repeat: no-repeat;
   background-position: center bottom;
   color: #000;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Like it</title>
+    <link rel="icon" href="https://img.icons8.com/nolan/64/html-5.png">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/like_it.css' %}">
+  </head>
+  <body>
+
+    <h3>Double click on the image to <i class="fas fa-heart"></i> it</h3>
+
+    <div class="container">
+
+      <div class="user">
+        <div class=""><img  class="userpic" src="https://source.unsplash.com/random/300x300/?face" alt=""></div>
+        <div class=""><small>cute_puppies</small></div>
+      </div>
+
+      <div class="loveMe"></div>
+
+      <div class="icons">
+        <span id="times">0</span> Likes
+        <i class="far fa-comment"></i>
+        <i class="far fa-paper-plane"></i>
+        <a href="{% url 'projects:index' %}">Back</a>
+      </div>
+
+      <div class="comments">
+
+      </div>
+
+    </div>
+
+
+
+    <script src="{% static 'js/like_it.js' %}"></script>
+  </body>
+</html>

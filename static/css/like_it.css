@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  transform: translateY(-75%);
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  transform: translateY(-5%);
+}
+
+
+
+.user {
+  position: relative;
+  display: flex;
+  width: 270px;
+  justify-content: flex-start;
+  align-content: center;
+  margin-left: 5px;
+  padding-bottom: 0;
+  transform: translateY(35%);
+}
+
+.userpic {
+  border-radius:50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  width: 270px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+#times {
+  margin-right: 5px;
+}
+
+.far.fa-comment {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+
+.fa-heart {
+  color: red;
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url('https://source.unsplash.com/random/?puppies');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 165px;
+}

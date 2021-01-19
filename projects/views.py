@@ -88,3 +88,6 @@ def positive_notification(request):
 
 def github_profiles(request):
     return render(request,"projects/github_profiles.html")
+
+def like_it(request):
+    return render(request,"projects/like_it.html")
