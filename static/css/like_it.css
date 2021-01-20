@@ -24,7 +24,9 @@ h3 {
 small {
   display: block;
   margin-bottom: 20px;
+  margin-left: 0;
   text-align: center;
+  transform: translateX(-5px);
 }
 
 .container {
@@ -41,14 +43,15 @@ small {
   align-content: center;
   margin-left: 5px;
   padding-bottom: 0;
-  transform: translateY(35%);
+  transform: translateY(31%);
 }
 
 .userpic {
   border-radius:50%;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   margin-right: 10px;
+  border: 2px solid deeppink;
 }
 
 .icons {
