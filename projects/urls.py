@@ -36,4 +36,10 @@ urlpatterns = [
     path('github_profiles/', views.github_profiles, name='github_profiles'),
     path('like_it/', views.like_it, name='like_it'),
 
+
+
+
+    path('blog_cards/', views.blog_cards, name='blog_cards'),
+    path('nice_login/', views.nice_login, name='nice_login'),
+    path('ads_manager/', views.ads_manager, name='ads_manager'),
 ]

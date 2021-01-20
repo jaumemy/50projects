@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ads Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/ads_manager.css' %}">
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="user">
+        <i class="fas fa-user"></i>
+        UI Design
+      </div>
+
+      <div class="search-area">
+        <div class="search">
+          <form>
+            <input type="text" name="search" placeholder="Search ads">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="filter">
+          <button type="submit">Filter</button>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Clicks</th>
+            <th>Priority</th>
+            <th>Impressions</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="priority-200">
+            <td class="left">Shure SE110 in-ear headphones</td>
+            <td>857</td>
+            <td><i class="fas fa-circle"></i>200</td>
+            <td>190</td>
+            <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+          </tr>
+          <tr class="priority-600">
+            <td class="left">Our favorite iPhone Solution</td>
+            <td>620</td>
+            <td><i class="fas fa-circle"></i>600</td>
+            <td>478</td>
+            <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+          </tr>
+          <tr class="priority-300">
+            <td class="left">Audio jack for connecting to your own headphones</td>
+            <td>500</td>
+            <td><i class="fas fa-circle"></i>300</td>
+            <td>322</td>
+            <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+          </tr>
+          <tr class="priority-200">
+            <td class="left">Memory-foam tips</td>
+            <td>430</td>
+            <td><i class="fas fa-circle"></i>200</td>
+            <td>197</td>
+            <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+          </tr>
+          <tr class="priority-300">
+            <td class="left">Cables over the tops</td>
+            <td>170</td>
+            <td><i class="fas fa-circle"></i>300</td>
+            <td>289</td>
+            <td><button class="delete"><i class="fas fa-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit" class="add-btn">
+        <i class="fa fa-laugh"></i>
+      </button>
+
+      <div class="back">
+        <a href="{% url 'projects:index' %}">Back</a>
+        <p></p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

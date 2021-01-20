@@ -91,3 +91,20 @@ def github_profiles(request):
 
 def like_it(request):
     return render(request,"projects/like_it.html")
+
+
+
+
+
+
+
+
+
+def blog_cards(request):
+    return render(request,"projects/blog_cards.html")
+
+def nice_login(request):
+    return render(request,"projects/nice_login.html")
+
+def ads_manager(request):
+    return render(request,"projects/ads_manager.html")
