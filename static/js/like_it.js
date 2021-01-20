@@ -1,10 +1,11 @@
 const loveMe = document.querySelector('.loveMe')
 const times = document.querySelector('#times')
+const container = document.querySelector('.container')
 
 let clickTime = 0
 let timesClicked = 0
 
-loveMe.addEventListener('click', (e) => {
+container.addEventListener('click', (e) => {
     if(clickTime === 0) {
         clickTime = new Date().getTime()
     } else {
@@ -28,16 +29,15 @@ const createHeart = (e) => {
     const leftOffset = e.target.offsetLeft
     const topOffset = e.target.offsetTop
 
-    const xInside = x - leftOffset
-    const yInside = y - topOffset
+    const xInside = (x - leftOffset)*(0.17165)
+    const yInside = (y - topOffset)*(0.75)
 
-    const xReal = xInside - 617
-    const yReal = yInside - 115
 
-    heart.style.top = `${yReal}px`
-    heart.style.left = `${xReal}px`
+    heart.style.left = `${xInside}px`
+    heart.style.top = `${yInside}px`
+    heart.style.position = `absolute`
 
-    loveMe.appendChild(heart)
+    container.appendChild(heart)
 
     times.innerHTML = ++timesClicked
 
