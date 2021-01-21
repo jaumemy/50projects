@@ -109,6 +109,7 @@ body{
   padding: 8px 30px;
   margin: 5px;
   font-size: 14px;
+  outline: none;
 }
 
 .back{
