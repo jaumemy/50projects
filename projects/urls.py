@@ -42,4 +42,9 @@ urlpatterns = [
     path('blog_cards/', views.blog_cards, name='blog_cards'),
     path('nice_login/', views.nice_login, name='nice_login'),
     path('ads_manager/', views.ads_manager, name='ads_manager'),
+
+
+
+    path('portfolio_index/', views.portfolio_index, name='portfolio_index'),
+
 ]

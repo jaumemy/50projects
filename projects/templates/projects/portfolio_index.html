@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Portfolio Index</title>
+    <link rel="icon" href="https://img.icons8.com/nolan/64/html-5.png">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/portfolio_index.css' %}">
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="#">JMontane</a></h1>
+        <ul>
+          <li><a href="#" class="desktopnav">Front End</a></li>
+          <li><a href="#" class="desktopnav">Back End</a></li>
+          <li><a href="#" class="desktopnav">CV</a></li>
+          <li><a href="#" class="desktopnav">About Me</a></li>
+
+          <li><a href="#" class="mobilenav">FE</a></li>
+          <li><a href="#" class="mobilenav">BE</a></li>
+          <li><a href="#" class="mobilenav">CV</a></li>
+          <li><a href="#" class="mobilenav">About</a></li>
+
+          <li> <img class="imgnav" src="{% static 'images/portfolio/spanish.png' %}"  </li>
+          <li> <img class="imgnav" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="hero">
+      <div class="container">
+        <h1>Jaume Montane</h1>
+        <h3>Full Stack Web Developer</h3>
+        <p>I am a self-taught web developer, focused on the Django framework, with front end skills to be able to show my work nicely. </p>
+      </div>
+    </div>
+
+    <script src="{% static 'js/portfolio_index.js' %}"></script>
+  </body>
+</html>

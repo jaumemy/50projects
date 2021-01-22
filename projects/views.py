@@ -108,3 +108,11 @@ def nice_login(request):
 
 def ads_manager(request):
     return render(request,"projects/ads_manager.html")
+
+
+
+
+
+
+def portfolio_index(request):
+    return render(request,"projects/portfolio_index.html")
