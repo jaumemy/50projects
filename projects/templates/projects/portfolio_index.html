@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -10,7 +11,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="{% static 'css/portfolio_index.css' %}">
   </head>
+
   <body>
+
+
+<!-- HEADER  -->
+
 
     <nav class="nav">
       <div class="container">
@@ -33,13 +39,29 @@
     </nav>
 
 
+
+
+
+<!-- HERO  -->
+
+
     <div class="hero">
       <div class="container">
         <h1>Jaume Montane</h1>
         <h3>Full Stack Web Developer</h3>
-        <p>I am a self-taught web developer, focused on the Django framework, with front end skills to be able to show my work nicely. </p>
+        <p>I am a self-taught developer, focused on Python's Django framework, and front end skills. </p>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+<!-- FRONT END SECTION -->
 
 
     <section class="container frontend">
@@ -69,26 +91,28 @@
           <div class="project">
             <div class="card">
 
-              <div class="card-description">
-                <p>I work with Html, Css, Javascript and other libraries.
+              <div class="card-description project">
+                <p>This is my first front end project - 50 Projects
                 <br>
-                You can see more in the "See more" section.</p>
+                Here I will list the technologies I used for this project.</p>
               </div>
 
+              <div class="img">
+                <!-- <img class="card-pic" src="{% static 'images/portfolio/50projects.png' %}" alt=""> -->
 
-              <img class="card-pic" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1130&q=80" alt="">
+              </div>
 
             </div>
             <div class="card">
 
               <div class="card-description">
-                <p>I work with Html, Css, Javascript and other libraries.
+                <p>This is my second front end project - Portfolio
                 <br>
-                You can see more in the "See more" section.</p>
+                Here I will list the technologies I used for this project</p>
               </div>
 
 
-              <img class="card-pic" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1130&q=80" alt="">
+              <img class="card-pic" src="{% static 'images/portfolio/portfolio.png' %}" alt="">
 
             </div>
           </div>
@@ -98,6 +122,19 @@
       </div>
 
     </section>
+
+
+
+
+
+
+
+
+
+
+<!-- BACK END SECTION -->
+
+
 
 
     <section class="container frontend">
@@ -127,26 +164,29 @@
           <div class="project">
             <div class="card">
 
-              <div class="card-description">
-                <p>I work with Html, Css, Javascript and other libraries.
+              <picture>
+                <img class="card-pic backend" src="{% static 'images/portfolio/crm1.png' %}" alt="">
+              </picture>
+
+              <div class="card-description backend">
+
+                <p>This is my first back end project - Crm1
                 <br>
-                You can see more in the "See more" section.</p>
+                Here I will list the technologies I used for this project</p>
               </div>
-
-
-              <img class="card-pic" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1130&q=80" alt="">
 
             </div>
             <div class="card">
+              <img class="card-pic backend" src="{% static 'images/portfolio/spacerweb.png' %}" alt="">
 
-              <div class="card-description">
-                <p>I work with Html, Css, Javascript and other libraries.
+
+              <div class="card-description backend">
+
+                <p>This is my second back end project - Spacer
                 <br>
-                You can see more in the "See more" section.</p>
+                Here I will list the technologies I used for this project</p>
               </div>
 
-
-              <img class="card-pic" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1130&q=80" alt="">
 
             </div>
           </div>
@@ -158,23 +198,84 @@
     </section>
 
 
-    <section class="container content">
-      <h2>Content One</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae dolore officia aperiam corporis similique. Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati minus odio eligendi!</p>
 
-      <h3>Content Two</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur provident nostrum possimus inventore nisi laboriosam consequatur modi nulla eos, commodi, omnis distinctio! Maxime distinctio impedit provident, voluptates illo odio nostrum minima beatae similique a sint sapiente voluptatum atque optio illum est! Tenetur tempora doloremque quae iste aperiam hic cumque repellat?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
 
-      <h3>Content Three</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-      </p>
+
+
+
+    <!-- CV SECTION -->
+
+
+    <section class="container cv">
+
+      <h1>CV</h1>
+
+      <div class="card small">
+
+        <div class="card-description">
+          <p>Here I will link to my CV</p>
+          <img src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/>
+        </div>
+
+      </div>
+
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CONTACT SECTION -->
+
+
+    <section class="container contact">
+
+      <h1>Contact</h1>
+
+      <div class="card small">
+
+        <div class="card-description">
+          <p>Here I will link to my mail, Github and Linkedin</p>
+          <img src="https://img.icons8.com/nolan/64/email.png"/>
+          <img src="https://img.icons8.com/nolan/64/github.png"/>
+          <img src="https://img.icons8.com/nolan/64/linkedin.png"/>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+
 
     <script src="{% static 'js/portfolio_index.js' %}"></script>
   </body>
