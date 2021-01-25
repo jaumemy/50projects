@@ -50,6 +50,7 @@
         <h1>Jaume Montane</h1>
         <h3>Full Stack Web Developer</h3>
         <p>I am a self-taught developer, focused on Python's Django framework. </p>
+        <button class="django-action"> <img class="django-logo" src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/> </button>
       </div>
     </div>
 
@@ -105,7 +106,7 @@
                 <span class="skill">Html</span>
                 <span class="skill">Css</span>
                 <span class="skill">Javascript</span>
-                <span class="skill">API</span>
+                <span class="skill">APIs</span>
                 <span class="skill">Flexbox</span>
                 <span class="skill">Grid</span>
               </div>
@@ -115,7 +116,7 @@
               </div>
 
               <div class="project-text">
-                This is a wide compilation of relatively simple projects
+                This is a wide compilation of short projects
                 done with vanilla Html, Css and Javascript.
               </div>
 
@@ -149,8 +150,8 @@
                 <span class="skill">Html</span>
                 <span class="skill">Css</span>
                 <span class="skill">Javascript</span>
-                <span class="skill">Flexbox</span>
                 <span class="skill">Web Design</span>
+                <span class="skill">DigitalOcean</span>
               </div>
 
               <div class="project-title">
@@ -158,7 +159,7 @@
               </div>
 
               <div class="project-text">
-                This very same website you are viewing. It is my first portfolio. <br>
+                This very same website you are viewing! It is my first portfolio. <br>
                 I made it from scratch and I am very proud of it.
               </div>
 
@@ -232,35 +233,91 @@
 
         <div class="projects">
 
+
           <div class="project">
+
             <div class="card">
 
-              <picture>
+              <div class="image">
+
                 <img class="card-pic backend" src="{% static 'images/portfolio/crm1.png' %}" alt="">
-              </picture>
+
+              </div>
 
               <div class="card-description backend">
 
-                <p>This is my first back end project - Crm1
-                <br>
-                Here I will list the technologies I used for this project</p>
+                <div class="project-skills">
+                  <span class="skill">Django</span>
+                  <span class="skill">AWS</span>
+                  <span class="skill">PostgreSQL</span>
+                  <span class="skill">S3 Buckets</span>
+                  <span class="skill">Server Security</span>
+                </div>
+
+                <div class="project-title">
+                  CRM
+                </div>
+
+                <div class="project-text">
+                  This is a Custom Relationship Manager where you can sign up,
+                  log in and then create customers, place orders or edit your profile
+                  info and image.
+
+                </div>
+
+                <div class="project-links">
+                  <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
+                  <a href="#"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                </div>
+
               </div>
 
             </div>
-            <div class="card">
-              <img class="card-pic backend" src="{% static 'images/portfolio/spacerweb.png' %}" alt="">
 
-
-              <div class="card-description backend">
-
-                <p>This is my second back end project - Spacer
-                <br>
-                Here I will list the technologies I used for this project</p>
-              </div>
-
-
-            </div>
           </div>
+
+
+          <div class="project">
+
+            <div class="card">
+
+              <div class="image">
+
+                <img class="card-pic backend" src="{% static 'images/portfolio/spacerweb.png' %}" alt="">
+
+              </div>
+
+              <div class="card-description backend">
+
+                <div class="project-skills">
+                  <span class="skill">Django</span>
+                  <span class="skill">User Auth</span>
+                  <span class="skill">SQLite</span>
+                  <span class="skill">Heroku</span>
+                </div>
+
+                <div class="project-title">
+                  SPACER
+                </div>
+
+                <div class="project-text">
+                  This is a social media website where you can create "galaxies", join them,
+                  post and share your galactic thoughts with other users.
+
+
+                </div>
+
+                <div class="project-links">
+                  <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
+                  <a href="#"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
 
         </div>
 
@@ -288,8 +345,17 @@
       <div class="card small">
 
         <div class="card-description-cv">
-          <p>Here I will link to my CV</p>
-          <img src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/>
+          <p>I studied Industrial Engineering in Barcelona, Spain for 6 years, where I worked
+          with Python, Matlab and C#. <br>
+          During the 2020 pandemic I decided I wanted to learn more about web development and
+          data science. </p>
+          <p>When I am not coding, I am also a licensed Fitness Instructor and a Basketball Referee.</p>
+
+          <div class="cvs">
+            <a>English CV <img class="imgcv" src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/></a>
+            <a>Spanish CV <img class="imgcv" src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/></a>
+          </div>
+
         </div>
 
       </div>
@@ -324,10 +390,14 @@
       <div class="card small">
 
         <div class="card-description-contact">
-          <p>Here I will link to my mail, Github and Linkedin</p>
-          <img src="https://img.icons8.com/nolan/64/email.png"/>
-          <img src="https://img.icons8.com/nolan/64/github.png"/>
-          <img src="https://img.icons8.com/nolan/64/linkedin.png"/>
+          <p>You can find me here:</p>
+
+          <div class="contacts">
+            <a href="#"> LinkedIn <img class="imgcontact" src="https://img.icons8.com/nolan/64/linkedin.png"/> </a>
+            <p>jmontane.dev@gmail.com <img class="imgcontact" src="https://img.icons8.com/nolan/64/email.png"/> </p>
+            <a href="#"> Github <img class="imgcontact" src="https://img.icons8.com/nolan/64/github.png"/> </a>
+          </div>
+
 
         </div>
 
