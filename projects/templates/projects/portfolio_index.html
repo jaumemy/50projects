@@ -27,19 +27,11 @@
           <li><a href="#" class="desktopnav">CV</a></li>
           <li><a href="#" class="desktopnav">Contact</a></li>
 
-          <li><a href="#" class="mobilenav">FE</a></li>
-          <li><a href="#" class="mobilenav">BE</a></li>
-          <li><a href="#" class="mobilenav">CV</a></li>
-          <li><a href="#" class="mobilenav">Contact</a></li>
-
-          <li> <img class="imgnav" src="{% static 'images/portfolio/spanish.png' %}"  </li>
-          <li> <img class="imgnav" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
+          <li> <img class="desktopnav imgnav" src="{% static 'images/portfolio/spanish.png' %}"  </li>
+          <li> <img class="desktopnav imgnav" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
         </ul>
       </div>
     </nav>
-
-
-
 
 
 <!-- HERO  -->
@@ -50,7 +42,6 @@
         <h1>Jaume Montane</h1>
         <h3>Full Stack Web Developer</h3>
         <p>I am a self-taught developer, focused on Python's Django framework. </p>
-        <button class="django-action"> <img class="django-logo" src="https://static.djangoproject.com/img/logos/django-logo-positive.png"/> </button>
       </div>
     </div>
 
@@ -58,7 +49,7 @@
 
 
 
-
+    <a class="call-to-action" href="#"> django <i class="fas fa-angle-down"></i> </a>
 
 
 
@@ -71,10 +62,10 @@
       <h1>Front End</h1>
 
 
-      <div class="card small">
+      <div class="card small smaller">
 
         <div class="card-description">
-          <p>I work with Html, Css and Javascript.
+          <p class="findme">I work with Html, Css and Javascript.
             <br>
             I am learning React and can use other libraries like Bootstrap or jQuery.
             <br>
@@ -151,7 +142,7 @@
                 <span class="skill">Css</span>
                 <span class="skill">Javascript</span>
                 <span class="skill">Web Design</span>
-                <span class="skill">DigitalOcean</span>
+                <span class="skill">Responsive Design</span>
               </div>
 
               <div class="project-title">
@@ -213,10 +204,10 @@
 
       <h1>Back End</h1>
 
-      <div class="card small">
+      <div class="card small smaller">
 
         <div class="card-description">
-          <p>I work with Django and Python.
+          <p class="findme">I work with Django and Python.
             <br>
             I have some experience with PostreSQL, AWS and S3 Buckets.
             <br>
@@ -293,7 +284,6 @@
                   <span class="skill">Django</span>
                   <span class="skill">User Auth</span>
                   <span class="skill">SQLite</span>
-                  <span class="skill">Heroku</span>
                 </div>
 
                 <div class="project-title">
@@ -345,11 +335,10 @@
       <div class="card small">
 
         <div class="card-description-cv">
-          <p>I studied Industrial Engineering in Barcelona, Spain for 6 years, where I worked
-          with Python, Matlab and C#. <br>
-          During the 2020 pandemic I decided I wanted to learn more about web development and
-          data science. </p>
-          <p>When I am not coding, I am also a licensed Fitness Instructor and a Basketball Referee.</p>
+          <p class="findme" >I studied Industrial Engineering, working with Python, Matlab and C#. <br>
+          During the 2020 pandemic I decided to learn more about web development and
+          data science. <br>
+          When not coding, I am also a Fitness Instructor and a Basketball Referee.</p>
 
           <div class="cvs">
             <a>English CV <img class="imgcv" src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/></a>
@@ -387,10 +376,10 @@
 
       <h1>Contact</h1>
 
-      <div class="card small">
+      <div class="card small smaller">
 
         <div class="card-description-contact">
-          <p>You can find me here:</p>
+          <p class="findmect" >You can find me here:</p>
 
           <div class="contacts">
             <a href="#"> LinkedIn <img class="imgcontact" src="https://img.icons8.com/nolan/64/linkedin.png"/> </a>
@@ -425,6 +414,7 @@
 
     <div class="footer">
       <h3 class="logo">JMontane, 2021</h3>
+      <p>"Sic parvis magna"</p>
       <small>Designed and coded by me, Thanks for visiting :)</small>
     </div>
 
