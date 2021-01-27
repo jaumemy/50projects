@@ -22,6 +22,15 @@ function fixNav() {
 
 
 
+// DROPDOWN MENU WITH ANIMATED ANIMATION
+
+const hamb = document.querySelector('.hamb')
+const hambtoggle = document.getElementById('hambtoggle')
+
+hambtoggle.addEventListener('click', () => hamb.classList.toggle('active'))
+
+
+
 
 
 // NIGHT AND DAY MODE

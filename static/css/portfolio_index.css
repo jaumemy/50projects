@@ -128,6 +128,10 @@ body {
   cursor: pointer;
 }
 
+.dropdownMenu {
+  display: none;
+}
+
 
 
 /* HEADER JS */
@@ -658,6 +662,55 @@ body {
 
   .daymode.active {
     display: none;
+  }
+
+  /* HAMBURGUER DROPMENU */
+
+  .dropdownMenu {
+    display: flex;
+  }
+
+  .hamb {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+    height: 25px;
+    width: 25px;
+  }
+
+  .hamb:focus {
+    outline: 0;
+  }
+
+  .hamb:hover {
+    
+  }
+
+  .hamb .hambline {
+    background-color: #fff;
+    height: 2.5px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 2.5px;
+    border-radius: 1.25px;
+    transition: transform 0.6s linear;
+  }
+
+  .hamb .line2 {
+    top: auto;
+    bottom: 5px;
+  }
+
+
+  .hamb.active .line1 {
+    transform: translateY(12.5px);
+  }
+
+  .hamb.active .line2 {
+    transform: translateY(-12.5px);
   }
 }
 
