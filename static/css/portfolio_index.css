@@ -40,6 +40,7 @@ html.dark {
   --djangolight-color: #44b78b;
 }
 
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -155,6 +156,22 @@ body {
   display: inline;
 }
 
+
+.spanishmode {
+  display: inline;
+}
+
+.spanishmode.active {
+  display: none;
+}
+
+.englishmode {
+  display: none;
+}
+
+.englishmode.active {
+  display: inline;
+}
 
 
 
@@ -634,4 +651,66 @@ body {
   .desktopnav {
     display: none;
   }
+
+  .englishmode.active {
+    display: none;
+  }
+
+  .daymode.active {
+    display: none;
+  }
+}
+
+
+
+/* SPANISH-ENGLISH */
+
+.spanish_p1 span,
+.spanish_p2 span,
+.spanish_p3 span,
+.spanish_p4 span,
+.spanish_p5 span,
+.spanish_p6 span,
+.spanish_p7 span,
+.spanish_p8 span,
+.spanish_p9 span {
+  display: none;
+}
+
+
+
+.spanish_p1::after {
+  content: 'Soy un desarrolador autodidacta, especializado en Django, el framework de Python.'
+}
+
+.spanish_p2::after {
+  content: "Trabajo con Html, Css y Javascript. Estoy aprendiendo React y puedo usar librerías como Bootstrap o jQuery. Desliza para ver más o visita la página completa de Front End."
+}
+
+.spanish_p3::after {
+  content: "Una gran compilación de proyectos cortos hechos con Html, Css y Javascript puros."
+}
+
+.spanish_p4::after {
+  content: "El mismo sitio web que estás viendo ahora mismo! Es mi primer portafolio. Lo hice todo desde cero y estoy muy orgulloso del resultado. "
+}
+
+.spanish_p5::after {
+  content: "Trabajo con Django y Python. Tengo algo de experiencia con PostgreAQL, AWS y S3 Buckets. Desliza para ver más o visita la página completa de Back End."
+}
+
+.spanish_p6::after {
+  content: "Un Custom Relationship Manager donde puedes registrarte, y con este usuario crear clientes, realizar pedidos o editar la información e imagen de tu perfil"
+}
+
+.spanish_p7::after {
+  content: "Una red social donde puedes crear 'galaxias', unirte a ellas, postear y compartir tus ideas 'galácticas' con otros usuarios"
+}
+
+.spanish_p8::after {
+  content: "Estudié Ingeniería Industrial, trabajando con Python, Matlab y C#. Durante la pandemia de 2020 decidí aprender desarrollo web y data science. Cuando no estoy programando, soy también Instructor de Fitness y Árbitro de Baloncesto "
+}
+
+.spanish_p9::after {
+  content: "Puedes encontrarme aquí:"
 }
