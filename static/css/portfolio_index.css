@@ -314,6 +314,10 @@ body {
 
 /* FRONT AND BACK END SECTIONS */
 
+#frontend {
+  margin-bottom: 100px;
+}
+
 
 .frontend {
   display: flex;
@@ -752,6 +756,11 @@ body {
   .hamb .line2 {
     top: auto;
     bottom: 5px;
+  }
+
+  .hamb .line3 {
+    top: 11.25px;
+    bottom: auto;
   }
 
 

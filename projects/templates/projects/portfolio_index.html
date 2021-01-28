@@ -21,7 +21,7 @@
     <nav class="nav">
       <div class="container">
 
-        <h1 class="logo"><a href="#"> JMontane </a></h1>
+        <h1 class="logo"><a href="#hero"> JMontane </a></h1>
 
         <div class="dropdownMenu">
 
@@ -30,6 +30,7 @@
             <button class="hamb" id="hambtoggle">
               <div class="hambline line1"></div>
               <div class="hambline line2"></div>
+              <div class="hambline line3"></div>
             </button>
 
           </div>
@@ -39,10 +40,10 @@
 
             <ul class="adjust1">
 
-              <li><a href="#" class="mobilenav" id="frontendBtn">Front End</a></li>
-              <li><a href="#" class="mobilenav">Back End</a></li>
-              <li><a href="#" class="mobilenav">CV</a></li>
-              <li><a href="#" class="mobilenav">Contact</a></li>
+              <li><a href="#frontend" class="mobilenav" id="frontendBtn">Front End</a></li>
+              <li><a href="#backend" class="mobilenav">Back End</a></li>
+              <li><a href="#cv" class="mobilenav">CV</a></li>
+              <li><a href="#contact" class="mobilenav">Contact</a></li>
 
               <div class="modes">
                 <li> <img class="mobilenav imgnav mobilespanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
@@ -61,10 +62,10 @@
         <div class="desktopnav">
           <ul>
 
-            <li><a href="#" class="desktopnav" id="frontendBtn">Front End</a></li>
-            <li><a href="#" class="desktopnav">Back End</a></li>
-            <li><a href="#" class="desktopnav">CV</a></li>
-            <li><a href="#" class="desktopnav">Contact</a></li>
+            <li><a href="#frontend" class="desktopnav" id="frontendBtn">Front End</a></li>
+            <li><a href="#backend" class="desktopnav">Back End</a></li>
+            <li><a href="#cv" class="desktopnav">CV</a></li>
+            <li><a href="#contact" class="desktopnav">Contact</a></li>
 
             <li> <img class="desktopnav imgnav spanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
             <li> <img class="desktopnav imgnav englishmode" src="{% static 'images/portfolio/english.png' %}"  </li>
@@ -83,7 +84,7 @@
 <!-- HERO  -->
 
 
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class="container">
         <h1>Jaume Montane</h1>
         <h3>Full Stack Web Developer</h3>
@@ -95,8 +96,11 @@
 
 
 
-    <a class="call-to-action" href="#"> django <i class="fas fa-angle-down"></i> </a>
+    <a class="call-to-action" href="#django"> django <i class="fas fa-angle-down" ></i> </a>
 
+    <div class="" id="frontend">
+
+    </div>
 
 
 <!-- FRONT END SECTION -->
@@ -228,7 +232,7 @@
     </section>
 
 
-    <div class="line">
+    <div class="line" id="backend">
 
     </div>
 
@@ -246,7 +250,7 @@
 
 
 
-    <section class="container frontend">
+    <section class="container frontend" id="django">
 
       <h1>Back End</h1>
 
@@ -363,7 +367,7 @@
 
 
 
-    <div class="line">
+    <div class="line" id="cv">
 
     </div>
 
@@ -417,7 +421,7 @@
     <!-- CONTACT SECTION -->
 
 
-    <section class="container contact">
+    <section class="container contact" id="contact">
 
       <h1>Contact</h1>
 
