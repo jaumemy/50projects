@@ -13,10 +13,18 @@ const frontendSection = document.querySelector('.container.frontend')
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
+  const adjust1 = document.querySelector('.adjust1')
+  const adjust2 = document.querySelector('.adjust2')
+
+
   if (window.scrollY > hero.offsetHeight-46.2) {
     nav.classList.add('active')
+    adjust1.classList.add('active')
+    adjust2.classList.add('active')
   } else {
     nav.classList.remove('active')
+    adjust1.classList.remove('active')
+    adjust2.classList.remove('active')
   }
 }
 
@@ -26,8 +34,12 @@ function fixNav() {
 
 const hamb = document.querySelector('.hamb')
 const hambtoggle = document.getElementById('hambtoggle')
+const dropdownMenuExpanded = document.querySelector('.dropdownMenuExpanded')
 
-hambtoggle.addEventListener('click', () => hamb.classList.toggle('active'))
+hambtoggle.addEventListener('click', (e) => {
+  hamb.classList.toggle('active')
+  dropdownMenuExpanded.classList.toggle('active')
+})
 
 
 
@@ -38,11 +50,16 @@ hambtoggle.addEventListener('click', () => hamb.classList.toggle('active'))
 const nightmode = document.querySelector('.nightmode')
 const daymode = document.querySelector('.daymode')
 
+const nightmodeMobile = document.querySelector('.mobilenightmode')
+const daymodeMobile = document.querySelector('.mobiledaymode')
+
 
 nightmode.addEventListener('click', (e) => {
   const html = document.querySelector('html')
   nightmode.classList.toggle('active')
   daymode.classList.toggle('active')
+  nightmodeMobile.classList.toggle('active')
+  daymodeMobile.classList.toggle('active')
   html.classList.add('dark')
 })
 
@@ -50,8 +67,30 @@ daymode.addEventListener('click', (e) => {
   const html = document.querySelector('html')
   nightmode.classList.toggle('active')
   daymode.classList.toggle('active')
+  nightmodeMobile.classList.toggle('active')
+  daymodeMobile.classList.toggle('active')
   html.classList.remove('dark')
 })
+
+nightmodeMobile.addEventListener('click', (e) => {
+  const html = document.querySelector('html')
+  nightmode.classList.toggle('active')
+  daymode.classList.toggle('active')
+  nightmodeMobile.classList.toggle('active')
+  daymodeMobile.classList.toggle('active')
+  html.classList.add('dark')
+})
+
+daymodeMobile.addEventListener('click', (e) => {
+  const html = document.querySelector('html')
+  nightmode.classList.toggle('active')
+  daymode.classList.toggle('active')
+  nightmodeMobile.classList.toggle('active')
+  daymodeMobile.classList.toggle('active')
+  html.classList.remove('dark')
+})
+
+
 
 
 // SPANISH AND ENGLISH MODE
@@ -59,11 +98,16 @@ daymode.addEventListener('click', (e) => {
 const spanishmode = document.querySelector('.spanishmode')
 const englishmode = document.querySelector('.englishmode')
 
+const spanishmodeMobile = document.querySelector('.mobilespanishmode')
+const englishmodeMobile = document.querySelector('.mobileenglishmode')
+
 
 spanishmode.addEventListener('click', (e) => {
   const html = document.querySelector('html')
   spanishmode.classList.toggle('active')
   englishmode.classList.toggle('active')
+  spanishmodeMobile.classList.toggle('active')
+  englishmodeMobile.classList.toggle('active')
   html.classList.add('spanish')
   translateAll()
   addAnchorTags()
@@ -74,9 +118,36 @@ englishmode.addEventListener('click', (e) => {
   spanishmode.classList.toggle('active')
   englishmode.classList.toggle('active')
   html.classList.remove('spanish')
+  spanishmodeMobile.classList.toggle('active')
+  englishmodeMobile.classList.toggle('active')
   translateAll()
   removeAnchorTags()
 })
+
+spanishmodeMobile.addEventListener('click', (e) => {
+  const html = document.querySelector('html')
+  spanishmode.classList.toggle('active')
+  englishmode.classList.toggle('active')
+  spanishmodeMobile.classList.toggle('active')
+  englishmodeMobile.classList.toggle('active')
+  html.classList.add('spanish')
+  translateAll()
+  addAnchorTags()
+})
+
+englishmodeMobile.addEventListener('click', (e) => {
+  const html = document.querySelector('html')
+  spanishmode.classList.toggle('active')
+  englishmode.classList.toggle('active')
+  spanishmodeMobile.classList.toggle('active')
+  englishmodeMobile.classList.toggle('active')
+  html.classList.remove('spanish')
+  translateAll()
+  removeAnchorTags()
+})
+
+
+
 
 function translateAll() {
   const translate_p1 = document.querySelector('.translate_p1')

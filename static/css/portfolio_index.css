@@ -92,6 +92,7 @@ body {
   left: 0;
   right: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 10;
 }
 
 .nav a:hover {
@@ -126,9 +127,14 @@ body {
   width: 24px;
   margin: auto 5px;
   cursor: pointer;
+  z-index: 25;
 }
 
 .dropdownMenu {
+  display: none;
+}
+
+.dropdownMenuExpanded {
   display: none;
 }
 
@@ -145,7 +151,7 @@ body {
 }
 
 .nightmode {
-  display: inline;
+  display: flex;
 }
 
 .nightmode.active {
@@ -157,12 +163,30 @@ body {
 }
 
 .daymode.active {
-  display: inline;
+  display: flex;
+}
+
+
+
+.mobilenightmode {
+  display: flex;
+}
+
+.mobilenightmode.active {
+  display: none;
+}
+
+.mobiledaymode {
+  display: none;
+}
+
+.mobiledaymode.active {
+  display: flex;
 }
 
 
 .spanishmode {
-  display: inline;
+  display: flex;
 }
 
 .spanishmode.active {
@@ -174,9 +198,25 @@ body {
 }
 
 .englishmode.active {
-  display: inline;
+  display: flex;
 }
 
+
+.mobilespanishmode {
+  display: flex;
+}
+
+.mobilespanishmode.active {
+  display: none;
+}
+
+.mobileenglishmode {
+  display: none;
+}
+
+.mobileenglishmode.active {
+  display: flex;
+}
 
 
 
@@ -666,26 +706,36 @@ body {
 
   /* HAMBURGUER DROPMENU */
 
+
   .dropdownMenu {
     display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    background-color: var(--navbg-color);
+    opacity: 0.98;
+  }
+
+  .hamb_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   .hamb {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 10px 10px;
     position: relative;
     height: 25px;
     width: 25px;
+    z-index: 5;
   }
 
   .hamb:focus {
     outline: 0;
-  }
-
-  .hamb:hover {
-    
   }
 
   .hamb .hambline {
@@ -711,6 +761,51 @@ body {
 
   .hamb.active .line2 {
     transform: translateY(-12.5px);
+  }
+
+  .dropdownMenuExpanded.active {
+    display: flex;
+    flex-direction: column;
+    right: -20px;
+    top: -20px;
+    background-color: var(--navbg-color);
+    opacity: 0.95;
+    transition: all 0.5s ease-in;
+  }
+
+  .dropdownMenuExpanded ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+    margin-top: 55px;
+    font-size: 1.25rem;
+  }
+
+  .adjust1 {
+    transition: all 0.5s ease-in;
+  }
+
+  .adjust1.active {
+    margin-top: 45px;
+  }
+
+  .adjust2 {
+    transition: all 0.5s ease-in;
+  }
+
+  .adjust2.active {
+    top: 7.5px;
+  }
+
+  .dropdownMenuExpanded ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+
+  .modes {
+    display: flex;
   }
 }
 
