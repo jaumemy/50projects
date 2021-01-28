@@ -182,14 +182,14 @@ function translateAll() {
 function addAnchorTags() {
   const frontendAnchorTag = document.getElementById('frontendAnchorTag')
   var aTag1 = document.createElement('a');
-  aTag1.setAttribute('href',"#");
+  aTag1.setAttribute('href',"https://portfolio-frontend-3cg9e.ondigitalocean.app/");
   aTag1.innerText = "Front End";
   aTag1.setAttribute("class", "toRemove1");
   frontendAnchorTag.appendChild(aTag1);
 
   const backendAnchorTag = document.getElementById('backendAnchorTag')
   var aTag2 = document.createElement('a');
-  aTag2.setAttribute('href',"#");
+  aTag2.setAttribute('href',"https://portfolio-backend-97f5p.ondigitalocean.app/");
   aTag2.innerText = "Back End";
   aTag2.setAttribute("class", "toRemove2");
   backendAnchorTag.appendChild(aTag2);
@@ -198,4 +198,52 @@ function addAnchorTags() {
 function removeAnchorTags() {
   document.querySelector('.toRemove1').remove()
   document.querySelector('.toRemove2').remove()
+}
+
+
+// COPY email
+
+const myEmail = document.getElementById('myEmail')
+
+myEmail.addEventListener('click', (e) => {
+  const textarea = document.createElement('textarea')
+  textarea.value = 'jmontane.dev@gmail.com'
+  document.body.appendChild(textarea)
+  textarea.select()
+  document.execCommand('copy')
+  textarea.remove()
+  alert(" 'jmontane.dev@gmail.com' copied to clipboard!")
+})
+
+
+
+// SCROLLING text
+
+
+const scrollingText = document.getElementById('scrollingText')
+const text = 'Full Stack Web Developer'
+let idx = 1
+let count = 0
+
+writeText()
+
+function writeText() {
+    scrollingText.innerText = text.slice(0, idx)
+
+    idx++
+    count++
+
+    if(idx > text.length) {
+        idx = 1
+    }
+
+    else if(count > 24) {
+      staticText()
+    }
+
+    setTimeout(writeText, 200)
+}
+
+function staticText() {
+  scrollingText.innerText = 'Full Stack Web Developer'
 }

@@ -395,10 +395,25 @@ body {
   border-radius: 5px;
   z-index: 0;
   position: relative;
+  transition: all 0.5s ease-in;
+}
+
+.card-pic:hover {
+  width: 448.2px;
+  height: 265.6px;
+  z-index: 60;
+  cursor: zoom-in;
 }
 
 .card-pic.backend {
   transform: translateX(-80px);
+}
+
+.card-pic.backend:hover {
+  width: 448.2px;
+  height: 265.6px;
+  z-index: 60;
+  cursor: zoom-in;
 }
 
 .showcase {
@@ -549,7 +564,13 @@ body {
   color: var(--github-darkblue);
 }
 
+#myEmail {
+  cursor: pointer;
+}
 
+#myEmail p:hover {
+  color: var(--github-darkblue);
+}
 
 
 
