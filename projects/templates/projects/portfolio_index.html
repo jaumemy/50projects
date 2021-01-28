@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <title>Portfolio Index</title>
-    <link rel="icon" href="https://img.icons8.com/nolan/64/html-5.png">
+    <title>JMontane</title>
+    <link rel="icon" href="{% static 'images/portfolio/jmlogo_cut.png' %}">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="{% static 'css/portfolio_index.css' %}">
@@ -40,7 +40,7 @@
 
             <ul class="adjust1">
 
-              <li><a href="#frontend" class="mobilenav" id="frontendBtn">Front End</a></li>
+              <li><a href="#frontend" class="mobilenav">Front End</a></li>
               <li><a href="#backend" class="mobilenav">Back End</a></li>
               <li><a href="#cv" class="mobilenav">CV</a></li>
               <li><a href="#contact" class="mobilenav">Contact</a></li>
@@ -49,7 +49,7 @@
                 <li> <img class="mobilenav imgnav mobilespanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
                 <li> <img class="mobilenav imgnav mobileenglishmode" src="{% static 'images/portfolio/english.png' %}"  </li>
                 <li> <img class="mobilenav imgnav mobilenightmode" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
-                <li> <img class="mobilenav imgnav mobiledaymode" src= "https://img.icons8.com/doodle/48/000000/sun--v1.png"  </li>
+                <li> <img class="mobilenav imgnav mobiledaymode" src= "{% static 'images/portfolio/daymode.png' %}"  </li>
               </div>
 
             </ul>
@@ -70,7 +70,7 @@
             <li> <img class="desktopnav imgnav spanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
             <li> <img class="desktopnav imgnav englishmode" src="{% static 'images/portfolio/english.png' %}"  </li>
             <li> <img class="desktopnav imgnav nightmode" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
-            <li> <img class="desktopnav imgnav daymode" src= "https://img.icons8.com/doodle/48/000000/sun--v1.png"  </li>
+            <li> <img class="desktopnav imgnav daymode" src= "{% static 'images/portfolio/daymode.png' %}"  </li>
 
           </ul>
 
@@ -96,7 +96,7 @@
 
 
 
-    <a class="call-to-action" href="#django"> django <i class="fas fa-angle-down" ></i> </a>
+    <a class="call-to-action" href="#django">Go to django!</i> </a>
 
     <div class="" id="frontend">
 
@@ -162,8 +162,8 @@
               </div>
 
               <div class="project-links">
-                <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
-                <a href="#"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                <a href="https://github.com/jaumemy/50projects"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                <a href="https://jm50projects.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
               </div>
 
 
@@ -205,8 +205,8 @@
               </div>
 
               <div class="project-links">
-                <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
-                <a class="imgcard portfolio_live" href="#"> <img src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                <a href="https://github.com/jaumemy/portfolio"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                <a class="imgcard portfolio_live" href=""> <img src="{% static 'images/portfolio/website.png' %}"> Live</a>
               </div>
 
 
@@ -250,7 +250,7 @@
 
 
 
-    <section class="container frontend" id="django">
+    <section class="container frontend">
 
       <h1>Back End</h1>
 
@@ -261,12 +261,12 @@
             <br>
             I have some experience with PostreSQL, AWS and S3 Buckets.
             <br>
-            Scroll down or see more in the full <a href="#"> Back End </a> page. </span> </p>
+            Scroll down or see more in the full <a href="#" id="django"> Back End </a> page. </span> </p>
         </div>
 
       </div>
 
-      <div class="showcase">
+      <div class="showcase" >
 
         <div class="title">
           <h2>Showcase</h2>
@@ -307,8 +307,8 @@
                 </div>
 
                 <div class="project-links">
-                  <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
-                  <a href="#"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                  <a href="https://github.com/jaumemy/dennisivy-django-crashcourse"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                  <a href="https://crm1app.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
                 </div>
 
               </div>
@@ -348,8 +348,8 @@
                 </div>
 
                 <div class="project-links">
-                  <a href="#"> <img class="imgcard" src="https://img.icons8.com/nolan/64/github.png"/>  Code</a>
-                  <a href="#"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                  <a href="https://github.com/jaumemy/django-second-clone-project"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                  <a href="https://spacerweb.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
                 </div>
 
               </div>
@@ -390,8 +390,8 @@
           When not coding, I am also a Fitness Instructor and a Basketball Referee. </span> </p>
 
           <div class="cvs">
-            <a>English CV <img class="imgcv" src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/></a>
-            <a>Spanish CV <img class="imgcv" src="https://img.icons8.com/nolan/64/parse-from-clipboard.png"/></a>
+            <a>English CV <img class="imgcv" src="{% static 'images/portfolio/cv.png' %}"/></a>
+            <a>Spanish CV <img class="imgcv" src="{% static 'images/portfolio/cv.png' %}"/></a>
           </div>
 
         </div>
@@ -431,9 +431,9 @@
           <p class="findmect translate_p9"> <span> You can find me here: </span> </p>
 
           <div class="contacts">
-            <a href="#"> LinkedIn <img class="imgcontact" src="https://img.icons8.com/nolan/64/linkedin.png"/> </a>
-            <p>jmontane.dev@gmail.com <img class="imgcontact" src="https://img.icons8.com/nolan/64/email.png"/> </p>
-            <a href="#"> Github <img class="imgcontact" src="https://img.icons8.com/nolan/64/github.png"/> </a>
+            <a href="#"> LinkedIn <img class="imgcontact" src="{% static 'images/portfolio/linkedin.png' %}"/> </a>
+            <p>jmontane.dev@gmail.com <img class="imgcontact" src="{% static 'images/portfolio/email.png' %}"/> </p>
+            <a href="https://github.com/jaumemy"> Github <img class="imgcontact" src="{% static 'images/portfolio/github.png' %}"/> </a>
           </div>
 
 
