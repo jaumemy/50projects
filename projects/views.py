@@ -116,3 +116,9 @@ def ads_manager(request):
 
 def portfolio_index(request):
     return render(request,"projects/portfolio_index.html")
+
+def portfolio_frontend(request):
+    return render(request,"projects/portfolio_frontend.html")
+
+def portfolio_backend(request):
+    return render(request,"projects/portfolio_backend.html")

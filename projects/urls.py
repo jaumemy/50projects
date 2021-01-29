@@ -46,5 +46,7 @@ urlpatterns = [
 
 
     path('portfolio_index/', views.portfolio_index, name='portfolio_index'),
+    path('portfolio_frontend/', views.portfolio_frontend, name='portfolio_frontend'),
+    path('portfolio_backend/', views.portfolio_backend, name='portfolio_backend'),
 
 ]

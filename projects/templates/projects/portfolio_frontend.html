@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>JMontane</title>
+    <link rel="icon" href="{% static 'images/portfolio/jmlogo_cut.png' %}">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/portfolio_frontend.css' %}">
+  </head>
+
+
+  <body>
+
+
+
+<!-- HEADER  -->
+
+
+  <nav class="nav">
+    <div class="container">
+
+      <h1 class="logo"><a href="#"> JMontane </a></h1>
+
+      <a href="#"> <p>/Front End</p> </a>
+
+
+            <div class="desktopnav">
+
+              <ul>
+
+                <li> <img class="desktopnav imgnav spanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
+                <li> <img class="desktopnav imgnav englishmode" src="{% static 'images/portfolio/english.png' %}"  </li>
+                <li> <img class="desktopnav imgnav nightmode" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
+                <li> <img class="desktopnav imgnav daymode" src= "{% static 'images/portfolio/daymode.png' %}"  </li>
+
+              </ul>
+
+            </div>
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+  <section class="container frontend">
+
+
+    <h1>Front End</h1>
+
+
+    <div class="card small smaller">
+
+      <div class="card-description" id="frontendAnchorTag">
+        <p class="findme translate_p1"> <span> I work with Html, Css and Javascript.
+          <br>
+          I am learning React and can use other libraries like Bootstrap or jQuery.
+          <br>
+          You can see all of my projects here. </p>
+      </div>
+
+    </div>
+
+
+    <div class="showcase">
+
+      <div class="title">
+        <h2>Projects</h2>
+      </div>
+
+    </div>
+
+
+    <div class="projects">
+
+
+      <div class="project">
+
+        <div class="card">
+
+          <div class="card-description">
+
+            <div class="project-skills">
+              <span class="skill">Html</span>
+              <span class="skill">Css</span>
+              <span class="skill">Javascript</span>
+              <span class="skill">APIs</span>
+              <span class="skill">Flexbox</span>
+              <span class="skill">Grid</span>
+            </div>
+
+            <div class="project-title">
+              50+ PROJECTS
+            </div>
+
+            <div class="project-text">
+              <p class="translate_p2"> <span> This is a wide compilation of short projects
+              done with vanilla Html, Css and Javascript. </span> </p>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/jaumemy/50projects"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+              <a href="https://jm50projects.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+            </div>
+
+
+          </div>
+
+          <div class="image">
+
+            <img class="card-pic" src="{% static 'images/portfolio/50projects.png' %}" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="project">
+
+        <div class="card">
+
+          <div class="card-description">
+
+            <div class="project-skills">
+              <span class="skill">Html</span>
+              <span class="skill">Css</span>
+              <span class="skill">Javascript</span>
+              <span class="skill">Web Design</span>
+              <span class="skill">Responsive Design</span>
+            </div>
+
+            <div class="project-title">
+              PORTFOLIO WEBSITE
+            </div>
+
+            <div class="project-text">
+              <p class="translate_p3"> <span> This very same website you are viewing! It is my first portfolio. <br>
+              I made it from scratch and I am very proud of it. </span> </p>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/jaumemy/portfolio"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+              <a class="imgcard portfolio_live" href=""> <img src="{% static 'images/portfolio/website.png' %}"> Live</a>
+            </div>
+
+
+          </div>
+
+          <div class="image">
+
+            <img class="card-pic" src="{% static 'images/portfolio/portfolio.png' %}" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <div class="footer">
+    <h3 class="logo">JMontane, 2021</h3>
+    <p>"Sic parvis magna"</p>
+    <small>Designed and coded by me, Thanks for visiting :)</small>
+  </div>
+
+
+
+
+  <script src="{% static 'js/portfolio_frontend.js' %}"></script>
+ </body>
+</html>
