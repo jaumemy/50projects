@@ -474,7 +474,8 @@ body {
 
 .spanish_p1 span,
 .spanish_p2 span,
-.spanish_p3 span {
+.spanish_p3 span,
+.spanish_p4 span {
   display: none;
 }
 
@@ -483,7 +484,7 @@ body {
 
 
 .spanish_p1::after {
-  content: "Trabajo con Html, Css y Javascript. Estoy aprendiendo React y puedo usar librerías como Bootstrap o jQuery. Desliza para ver más o visita la página completa de Front End."
+  content: "Trabajo con Html, Css y Javascript. Estoy aprendiendo React y puedo usar librerías como Bootstrap o jQuery. Aquí puedes ver todos mis proyectos de Front End."
 }
 
 .spanish_p2::after {
@@ -492,4 +493,8 @@ body {
 
 .spanish_p3::after {
   content: "El mismo sitio web que estás viendo ahora mismo! Es mi primer portafolio. Lo hice todo desde cero y estoy muy orgulloso del resultado. "
+}
+
+.spanish_p4::after {
+  content: "Una landing page simple donde empezar a practicar con forms, grid y Bootstrap "
 }

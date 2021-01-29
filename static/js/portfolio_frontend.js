@@ -59,4 +59,7 @@ function translateAll() {
 
   const translate_p3 = document.querySelector('.translate_p3')
   translate_p3.classList.toggle('spanish_p3')
+
+  const translate_p4 = document.querySelector('.translate_p4')
+  translate_p4.classList.toggle('spanish_p4')
 }

@@ -23,7 +23,7 @@
   <nav class="nav">
     <div class="container">
 
-      <h1 class="logo"><a href="#"> JMontane </a></h1>
+      <h1 class="logo"><a href="{% url 'projects:portfolio_index' %}"> JMontane </a></h1>
 
       <a href="#"> <p>/Front End</p> </a>
 
@@ -63,7 +63,7 @@
           <br>
           I am learning React and can use other libraries like Bootstrap or jQuery.
           <br>
-          You can see all of my projects here. </p>
+          You can see all of my Front End projects here. </p>
       </div>
 
     </div>
@@ -124,6 +124,9 @@
       </div>
 
 
+                                                    <!--  -->
+
+
 
       <div class="project">
 
@@ -159,6 +162,50 @@
           <div class="image">
 
             <img class="card-pic" src="{% static 'images/portfolio/portfolio.png' %}" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+                                        <!--  -->
+
+
+      <div class="project">
+
+        <div class="card">
+
+          <div class="card-description">
+
+            <div class="project-skills">
+              <span class="skill">Html</span>
+              <span class="skill">Css</span>
+              <span class="skill">Grid</span>
+              <span class="skill">Bootstrap</span>
+              <span class="skill">Github Pages</span>
+            </div>
+
+            <div class="project-title">
+               COLOMBIA LOVER
+            </div>
+
+            <div class="project-text">
+              <p class="translate_p4"> <span> A simple landing page to start practicing forms, grids and Bootstrap. </span> </p>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/jaumemy/jaumemy.github.io"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+              <a href="https://jaumemy.github.io/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+            </div>
+
+
+          </div>
+
+          <div class="image">
+
+            <img class="card-pic" src="{% static 'images/portfolio/colombia_lover.png' %}" alt="">
 
           </div>
 

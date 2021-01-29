@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
+/* ALL */
+
+
+:root {
+  --globalbg-color: #fff;
+  --navbg-color: #24292e;
+  --navlt-color: #fff;
+  --github-blue: #0366d6;
+  --github-darkblue: #013b7d;
+  --line-color: rgba(0, 0, 0, 0.25);
+  --h1-color: rgba(0, 0, 0, 0.75);
+  --pjshowcase-color: rgba(0, 0, 0, 0.5);
+  --pjtitle-color: rgba(0, 0, 0, 0.55);
+  --pjtext-color: rgba(0, 0, 0, 0.55);
+  --cardbg-color: rgba(3, 102, 214, 0.05);
+  --djangolight-color: #44b78b;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --globalbg-color: #0d1117;
+  --navbg-color: #24292e;
+  --navlt-color: rgba(255, 255, 255, 0.95);
+  --github-blue: #0366d6;
+  --github-darkblue: #013b7d;
+  --line-color: rgba(255, 255, 255, 0.75);
+  --h1-color: rgba(255, 255, 255, 0.95);
+  --pjshowcase-color: rgba(255, 255, 255, 0.80);
+  --pjtitle-color: rgba(255, 255, 255, 0.80);
+  --pjtext-color: rgba(255, 255, 255, 0.75);
+  --cardbg-color: #24292e;;
+  --djangolight-color: #44b78b;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-color: var(--globalbg-color);
+  transition: all 0.5s ease-in;
+}
+
+
+
+
+
+
+
+
+
+/*  HEADER */
+
+
+.container a {
+  text-decoration: none;
+  color: var(--github-blue);
+  font-weight: bolder;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in;
+}
+
+.nav {
+  position: fixed;
+  z-index: 100;
+  background-color: var(--navbg-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.nav a:hover {
+  color: var(--github-blue);
+  font-weight: bold;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.5px 0;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.nav a {
+  color: var(--navlt-color);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgnav {
+  height: 24px;
+  width: 24px;
+  margin: auto 5px;
+  cursor: pointer;
+  z-index: 25;
+}
+
+
+
+
+
+/* HEADER JS */
+
+
+.nightmode {
+  display: flex;
+}
+
+.nightmode.active {
+  display: none;
+}
+
+.daymode {
+  display: none;
+}
+
+.daymode.active {
+  display: flex;
+}
+
+.spanishmode {
+  display: flex;
+}
+
+.spanishmode.active {
+  display: none;
+}
+
+.englishmode {
+  display: none;
+}
+
+.englishmode.active {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FRONT END SECTION */
+
+
+
+.frontend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+.frontend a:hover {
+  color: var(--github-darkblue);
+}
+
+.frontend h1 {
+  font-size: 3.5rem;
+  color: var(--h1-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 65vw;
+  height: 35vh;
+  background-color: var(--cardbg-color);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin: 40px auto;
+  transition: all 0.5s ease-in;
+}
+
+.card.small {
+  background-color: transparent;
+  color: var(--pjtext-color);
+  border: none;
+  box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card.small .card-description {
+  transform: translateX(0px);
+  text-align: center;
+  line-height: 2rem;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  transform: translateX(60px);
+  width: 66%;
+  height: 80%;
+}
+
+.findme {
+  margin: 20px;
+}
+
+.card-description.backend {
+  transform: translateX(-60px);
+}
+
+.card-pic {
+  width: 270px;
+  height: 160px;
+  transform: translateX(80px);
+  box-shadow: 1px rgba(154, 160, 185, 0.05),
+    0 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  z-index: 0;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+
+.card-pic:hover {
+  width: 448.2px;
+  height: 265.6px;
+  z-index: 60;
+  cursor: zoom-in;
+}
+
+.card-pic.backend {
+  transform: translateX(-80px);
+}
+
+.card-pic.backend:hover {
+  width: 448.2px;
+  height: 265.6px;
+  z-index: 60;
+  cursor: zoom-in;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--pjshowcase-color);
+}
+
+.project-skills {
+  cursor: default;
+  line-height: 25px;
+}
+
+.project-info {
+  justify-content: center;
+  align-items: center;
+  transform: translateX(60px);
+}
+
+.project-title {
+  color: var(--pjtitle-color);
+}
+
+.project-text {
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: var(--pjtext-color);
+}
+
+.skill {
+  background-color: var(--github-blue);
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.imgcard {
+  height: 32px;
+  width: 32px;
+  transform: translateY(30%);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio_live {
+  display: none;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+  width: 100vw;
+  height: 50px;
+  background-color: var(--navbg-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.footer p {
+  font-size: 10px;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media (max-width: 1100px) {
+
+  .card-description {
+    font-size: 90%;
+  }
+
+  .card-description.backend {
+    font-size: 90%;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+
+  .card.small {
+    height: 70vh;
+    font-size: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .card.small.smaller {
+    height: 50vh;
+  }
+
+
+  .footer {
+    font-size: 90%;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  .card-description {
+    transform: translateX(0px);
+    font-size: 90%;
+  }
+
+  .card-description.backend {
+    transform: translateX(0px);
+    font-size: 90%;
+  }
+
+  .card-pic {
+    transform: translate(0, -10px);
+    width: 210px;
+    height: 130px;
+  }
+
+  .card-pic.backend {
+    transform: translate(0, 15px);
+    width: 210px;
+    height: 130px;
+  }
+
+  .backend h1{
+    font-size: 2.5rem;
+  }
+
+  .project-skills {
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  .project-links {
+    margin-bottom: 25px;
+  }
+}
+
+
+
+
+@media (max-width: 640px) {
+
+  .hero h1 {
+    font-size: 32px;
+    margin: 25px 20px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+    margin: 25px 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin: 25px 50px;
+    max-width: 400px;
+  }
+
+}
+
+
+
+
+
+
+
+/* SPANISH-ENGLISH */
+
+.spanish_p1 span,
+.spanish_p2 span,
+.spanish_p3 span,
+.spanish_p4 span {
+  display: none;
+}
+
+
+
+
+
+.spanish_p1::after {
+  content: "Trabajo con Django y Python. Tengo algo de experiencia con PostgreAQL, AWS y S3 Buckets. Aquí puedes ver todos mis proyectos de Back End."
+}
+
+.spanish_p2::after {
+  content: "Un Custom Relationship Manager donde puedes registrarte, y con este usuario crear clientes, realizar pedidos o editar la información e imagen de tu perfil."
+}
+
+.spanish_p3::after {
+  content: "Una red social donde puedes crear 'galaxias', unirte a ellas, postear y compartir tus ideas 'galácticas' con otros usuarios."
+}
+
+.spanish_p4::after {
+  content: "Un blog muy colorido, donde puedes crear posts, manejar borradores y aprovar, rechazar, postear o eliminar post dependiendo de tu rol de usuario."
+}

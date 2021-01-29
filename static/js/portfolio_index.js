@@ -182,15 +182,15 @@ function translateAll() {
 function addAnchorTags() {
   const frontendAnchorTag = document.getElementById('frontendAnchorTag')
   var aTag1 = document.createElement('a');
-  aTag1.setAttribute('href',"https://portfolio-frontend-3cg9e.ondigitalocean.app/");
-  aTag1.innerText = "Front End";
+  aTag1.setAttribute('href',"/portfolio_frontend");
+  aTag1.innerText = "FRONT END";
   aTag1.setAttribute("class", "toRemove1");
   frontendAnchorTag.appendChild(aTag1);
 
   const backendAnchorTag = document.getElementById('backendAnchorTag')
   var aTag2 = document.createElement('a');
-  aTag2.setAttribute('href',"https://portfolio-backend-97f5p.ondigitalocean.app/");
-  aTag2.innerText = "Back End";
+  aTag2.setAttribute('href',"/portfolio_backend");
+  aTag2.innerText = "BACK END";
   aTag2.setAttribute("class", "toRemove2");
   backendAnchorTag.appendChild(aTag2);
 }

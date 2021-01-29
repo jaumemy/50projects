@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>JMontane</title>
+    <link rel="icon" href="{% static 'images/portfolio/jmlogo_cut.png' %}">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/portfolio_backend.css' %}">
+  </head>
+
+
+  <body>
+
+
+
+<!-- HEADER  -->
+
+
+  <nav class="nav">
+    <div class="container">
+
+      <h1 class="logo"><a href="{% url 'projects:portfolio_index' %}"> JMontane </a></h1>
+
+      <a href="#"> <p>/Back End</p> </a>
+
+
+            <div class="desktopnav">
+
+              <ul>
+
+                <li> <img class="desktopnav imgnav spanishmode" src="{% static 'images/portfolio/spanish.png' %}"  </li>
+                <li> <img class="desktopnav imgnav englishmode" src="{% static 'images/portfolio/english.png' %}"  </li>
+                <li> <img class="desktopnav imgnav nightmode" src="{% static 'images/portfolio/nightmode.png' %}"  </li>
+                <li> <img class="desktopnav imgnav daymode" src= "{% static 'images/portfolio/daymode.png' %}"  </li>
+
+              </ul>
+
+            </div>
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+  <!-- BACK END SECTION -->
+
+
+
+
+      <section class="container frontend">
+
+        <h1>Back End</h1>
+
+        <div class="card small smaller">
+
+          <div class="card-description" id="backendAnchorTag">
+            <p class="findme translate_p1"> <span> I work with Django and Python.
+              <br>
+              I have some experience with PostreSQL, AWS and S3 Buckets.
+              <br>
+              You can see all of my Back End projects here </span> </p>
+          </div>
+
+        </div>
+
+        <div class="showcase" >
+
+          <div class="title">
+            <h2>Projects</h2>
+          </div>
+
+          <div class="projects">
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="{% static 'images/portfolio/crm1.png' %}" alt="">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">AWS</span>
+                    <span class="skill">PostgreSQL</span>
+                    <span class="skill">S3 Buckets</span>
+                    <span class="skill">Server Security</span>
+                  </div>
+
+                  <div class="project-title">
+                    CRM
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p2"> <span> This is a Custom Relationship Manager where you can sign up,
+                    log in and then create customers, place orders or edit your profile
+                    info and image. </span> </p>
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/dennisivy-django-crashcourse"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                    <a href="https://crm1app.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+                                        {#  #}
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="{% static 'images/portfolio/spacerweb.png' %}" alt="">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">User Auth</span>
+                    <span class="skill">SQLite</span>
+                  </div>
+
+                  <div class="project-title">
+                    SPACER
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p3"> <span> This is a social media website where you can create "galaxies", join them,
+                    post and share your galactic thoughts with other users. </span> </p>
+
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/django-second-clone-project"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                    <a href="https://spacerweb.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+                                                    {#  #}
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="{% static 'images/portfolio/music_blog.png' %}" alt="">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">User Auth</span>
+                    <span class="skill">CRUD</span>
+                    <span class="skill">Javascript</span>
+                  </div>
+
+                  <div class="project-title">
+                    MUSIC BLOG
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p4"> <span> This is a colorful blog, where you can crate posts, manage drafts, approve, reject, post or delete comments depending on your user role. </span> </p>
+
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/django-second-clone-project"> <img class="imgcard" src="{% static 'images/portfolio/github.png' %}"/>  Code</a>
+                    <a href="https://spacerweb.herokuapp.com/"> <img class="imgcard" src="{% static 'images/portfolio/website.png' %}"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <div class="footer">
+    <h3 class="logo">JMontane, 2021</h3>
+    <p>"Sic parvis magna"</p>
+    <small>Designed and coded by me, Thanks for visiting :)</small>
+  </div>
+
+
+
+
+  <script src="{% static 'js/portfolio_frontend.js' %}"></script>
+ </body>
+</html>
