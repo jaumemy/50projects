@@ -877,7 +877,7 @@ body {
     margin-top: 200px;
     margin-bottom: 50px;
   }
-  
+
 }
 
 @media (max-width: 500px) {
@@ -892,6 +892,12 @@ body {
     height: 175.3px;
     z-index: 60;
     cursor: zoom-in;
+  }
+  .project-skills {
+    width: 200px;
+  }
+  .project-title {
+
   }
 }
 
